@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 1.1</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            border: 1px solid blue;
+            width: 25%;
+            margin: auto;
+            height: 650px;
+        }
+        .title {
+            background-image: url(./image/exercise1.1/giphy.gif);
+            color: white;
+            margin-block-end: 0;
+            margin-block-start: 0;
+        }
+        .player-profile {
+            display: flex;
+        }
+        img {
+            border: 1px solid black;
+        }
+        .profile {
+            float: right;
+            overflow-x: scroll;
+            overflow-y: scroll;
+            width: 100%;
+            height: 98px;
+        }
+        .profile ul {
+            list-style-type: none;
+            padding-inline-start: 0;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        .facts ul {
+            list-style-image: url(./image/exercise1.1/star.png);
+            margin-left: 20px;
+        }
+        .posts p {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            background-color: rgb(236, 233, 233);
+        }
+        .posts::after {
+            content: "";
+            position: absolute;
+            border-top: 15px solid rgb(236, 233, 233);
+            border-right: 15px solid transparent;
+            border-left: 15px solid transparent;
+            left: 38%;
+        }
+        span {
+            margin-left: 70px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .comments h3 {
+            margin-block-end: 0;
+            margin-block-start: 0;
+            text-align: center;
+        }
+        label {
+            padding: 12px 12px 12px 0;
+        }
+        .col-25 {
+            float: left;
+            width: 30%;
+            margin-top: 6px;
+        }
+        .col-75 {
+            float: left;
+            width: 70%;
+            margin-top: 6px;
+        }
+        .row::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        input {
+            border: 1px solid black;
+        }
+        textarea {
+            height: 100px;
+            width: 80%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Player Profile</h2>
+    
+        <div class="player-profile">
+            <img src="./image/exercise1.1/avatar.gif" alt="Avatar">
+            <div class="profile">
+                <ul>
+                    <li>Ten: Nguyen Xuan Nam</li>
+                    <li>Noi sinh: Ha Noi</li>
+                    <li>Ngay sinh: 28/11/1990</li>
+                    <li>Vi tri: Teamlear</li>
+                    <li>Cao: 170cm</li>
+                    <li>Can nang: 65kg</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="facts">
+            <h4>Facts:</h4>
+            <ul>
+                <li>Nam gia nhap The Cong nam 1999</li>
+                <li>Trong suot thoi trai tre gia nhap The cong Nam da ghi duoc 160 ban thang trong vong 7 nam</li>
+                <li>Nam choi tran dau tien cho U19 Viet Nam vao do tuoi 16</li>
+                <li>Nam da dat cup U19 cho Viet Nam vao nam 2007</li>
+                <li>Nam da dat cup cau thu xuat sac nhat trong nam</li>
+            </ul>     
+        </div>
+
+        <div class="posts">
+            <p>
+                Nam choi cho cau lac bo the cong
+                <br>The cong dat chuc vo dich.
+            </p>
+        </div>
+            <span>Posted by <a href="#">The cong's Fan</a> 20/12/2007</span>
+        <div class="posts">   
+            <p>
+                Nam la cau thu choi rat hay o The cong
+                <br>Va anh ta da chuyen toi Hoa phat <> :)
+            </p>
+        </div>
+            <span>Posted by <a href="#">Hoa phat's Fan</a> 20/12/2007</span>
+
+        <div class="comments">
+            <h3>Your comment</h3>
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Your name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Your email (will not public)	</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="comment">Comment</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="comment" name="comment" placeholder="Your comment here" style="height:100px;"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

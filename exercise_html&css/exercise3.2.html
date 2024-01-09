@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 3.2</title>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            max-width: 100%;
+            margin: 0;
+        }
+        body {
+            background-color: #121212;
+        }
+        header {
+            background: url(./image/exercise3.2/fill_header.jpg) 100% 100%;
+            width: 85%;
+            height: 350px;
+        }
+        .logo {
+            background: url(./image/exercise3.2/logo.jpg) no-repeat;
+            height: 200px;
+            padding: 40px 0 0 70px;
+            position: absolute;
+            width: 300px;
+            margin-top: 60px;
+            margin-left: 6px;
+        }
+        .menu {
+            position: absolute;
+            margin-top: 192px;
+            margin-left: 50px;
+        }
+        .menu ul {
+            list-style-type: none;
+        }
+        .menu li {
+            float: left;
+        }
+        .menu a {
+            padding-right: 10px;
+        }
+        .menu span {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            margin-left: -90px;
+            position: absolute;
+        }
+        .main {
+            display: flex;
+        }
+        .left {
+            background-color: #1f1f1f;
+            width: 17%;
+            height: 320px;
+            margin-left: 120px;
+            position: relative;
+        }
+        .left > .info {
+            color: #707070;
+            margin: 25px 15px;
+            padding: 15px 0 25px 0;
+            border-top: 1px solid white;
+            border-bottom: 1px solid #707070;
+        }
+        .link ul {
+            list-style-type: none;
+            list-style-image: url(./image/exercise3.2/arr.gif);
+        }
+        .link ul > li {
+            padding: 5px;
+        }
+        .link a {
+            color: #707070;
+        }
+        .right {
+            padding-left: 40px;
+            width: 33%;
+        }
+        .image {
+            margin-top: 25px;
+        }
+        .info {
+            margin-left: 15px;
+            padding: 20px 0;
+        }
+        input {
+            background-color: #707070;
+            border: none;
+            height: 20px;
+        }
+        .info p {
+            padding: 10px 0;
+            border-bottom: 1px dotted #707070;
+            color: #707070;
+        }
+        .more {
+            padding: 10px 0;
+        }
+        .more a {
+            color: white;
+            text-decoration: none;
+        }
+        footer {
+            width: 53.3%;
+            margin-left: 100px;
+            margin-top: 20px;
+            color: #707070;
+            padding: 25px 0 50px 0;
+            border-top: 1px dotted #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>My .Style .</h1>
+        </div>
+        
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="image/exercise3.2/m1.jpg">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/exercise3.2/m2.jpg">
+                        <span>Folder</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/exercise3.2/m3.jpg">
+                        <span>Desk</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/exercise3.2/m4.jpg">
+                        <span>Chair</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./image/exercise3.2/m5.jpg">
+                        <span>Top</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="left">
+            <div class="info">
+                <p>Rem apque nveritati quasichite cto beatae vitae dicta sexplicabo enima ipsam voluptalent!</p>
+            </div>
+            <div class="link">
+                <ul>
+                    <li>
+                        <a href="#">Sed ut piciatis inde</a>
+                    </li>
+                    <li>
+                        <a href="#">Komniste nerroitaseanti</a>
+                    </li>
+                    <li>
+                        <a href="#">Opque nveritata quas</a>
+                    </li>
+                    <li>
+                        <a href="#">Archiite dicta sexcabo</a>
+                    </li>
+                    <li>
+                        <a href="#">Nemoenim ipsam</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="image">
+                <img src="image/exercise3.2/0_pic_1.jpg">
+            </div>
+            <div class="info">
+                <input type="text" name="input">
+                <p>Rem apque nveritati quasi architecto beatae vitae dicta sexplicabo enima ipsam voluplatem, quie voluptaspematur aut oditia consequuntur.</p>
+            </div>
+            <div class="more">
+                <a href="#">
+                    <img src="image/exercise3.2/arr_1.gif">launch website
+                </a>
+            </div>
+            <div class="image">
+                <img src="./image/exercise3.2/0_pic_2.jpg">
+            </div>
+            <div class="info">
+                <input type="text" name="input">
+                <p>Rem apque nveritati quasi architecto beatae vitae dicta sexplicabo enima ipsam voluplatem, quie voluptaspematur aut oditia consequuntur.</p>
+            </div>
+            <div class="more">
+                <a href="#">
+                    <img src="image/exercise3.2/arr_1.gif">launch website
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h5>CREATE DESIGN LAB @ 2008 | <u>PRIVACY POLICY</u></h5>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 3.1</title>
+    <meta charset="UTF-8">
+    <style>
+        * {
+            font-family: arial;
+            color: #595959;
+            max-width: 100%;
+        }
+        .container {
+            display: flex;
+            background-color: #111;
+            height: 650px;
+        }
+        .information-left {
+            width: 45%;
+            margin-left: 50px;
+            display: block;
+        }
+        h5 {
+            margin-bottom: 65px;
+        }
+        .information-left > img {
+            float: left;
+            width: 200px;
+            height: 100px;
+            padding: 0 40px 20px 0;
+        }
+        .noidung1 {
+            max-width: 95%;
+        }
+        .noidung1 h4 {
+            margin-block-start: 0;
+            color: white;
+        }
+        .noidung1 p {
+            margin-block-end: 0;
+            margin-block-start: 0;
+        }
+        .noidung2 {
+            border-top: 1px dotted white;
+            height: 200px;
+            margin-top: 20px;
+            margin-left: 10px;
+            width: 95%;
+        }
+        .more {
+            padding-top: 15px;
+        }
+        .more-info {
+            color: white;
+            text-decoration: none;
+        }
+        .link-info {
+            border-bottom: 1px dotted white;
+            width: 95%;
+        }
+        .link-info h4 {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            color: white;
+        }
+        .link-info p {
+            margin-block-end: 0;
+            margin-block-start: 0;
+        }
+        .link {
+            display: flex;
+        }
+        .left {
+            margin-right: 20px;
+        }
+        ul {
+            padding: 0;
+            list-style-type: none;
+            list-style-image: url(./image/exercise3.1/arr.gif);
+            list-style-position: inside;
+        }
+        .information-right {
+            background-color: #232326;
+            width: 23%;
+            height: 75%;
+            margin-top: 20px;
+        }
+        hr {
+            margin-top: 70px;
+            width: 70%;
+            border: 1px solid #444;
+        }
+        .information-right > img {
+            margin: auto;
+            border: 1px solid #444;
+            border-radius: 10px;
+            display: block;
+            margin-top: 50px;
+        }
+        .text {
+            margin: 20px 0 0 50px;
+        }
+        span {
+            color: white;
+        }
+        .text > p {
+            margin-block-start: 0;
+        }
+        .information-right > .more {
+            margin: 50px 0 0 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="information-left">
+            <h5>De thi ly thuyet</h5>
+            <img src="image/exercise3.1/1_pic_1.jpg">
+            <div class="noidung1">
+                <h4>Phần này là tiêu đề của khối, chữ màu trắng</h4>
+                <p>Phông chữ của cả trang là arial với cỡ chữ là 0.6875em. Trừ những thẻ đặc biệt chữ có màu tô màu trắng, tuyen nhiên lại không có gạch chân ở đưới liên kết. Ảnh minh họa của khối này là group.jpg. Ảnh có kích thước thật 300px150px. Trong khối này thì chỉ hiển thị với kích thước 200px*100px.</p>
+                <p style="text-indent: 10px">Hãy thể hiện khổi trên thành 2 phần như trên.. còn khối này chỉ 1 mà thôi.</p>
+            </div>
+        
+            <div class="noidung2">
+                <div class="more">
+                    <img src="image/exercise3.1/arr_1.gif" class="more-info">
+                    <a href="#" class="more-info">more info</a>
+                </div>
+            </div>
+
+            <div class="link-info">
+                <h4>Hãy thể hiện khối tin này với style giống khối trên</h4>
+                <p>Và bên dưới khối này thông tin được chia đôi hãy hiển thị đúng</p>
+                <div class="link">
+                    <div class="left">
+                        <ul>
+                            <li><a href="#">Quisque nis l portserisque</a></li>
+                            <li><a href="#">Eget males uada at nequiva</a></li>
+                            <li><a href="#">Eget nibhtiam ours us leo er</a></li>
+                            <li><a href="#">Nulla neceros estibulum</a></li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="#">Opget,at, nequivamus</a></li>
+                            <li><a href="#">Eget ours us leo vel metus er</a></li>
+                            <li><a href="#">Nulla facilisienean cec eros</a></li>
+                            <li><a href="#">anteip um primis in</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more">
+                <img src="image/exercise3.1/arr_1.gif" class="more-info">
+                <a href="#" class="more-info">more info</a>
+            </div>
+        </div>
+
+        <div class="information-right">
+            <hr>
+            <img src="image/exercise3.1/1_pic_2.jpg">
+            <div class="text">
+                <span>Đây là khối thông tin bên phải</span>
+                <p>Ảnh phía bên trên là E.gif<br>
+                    Màu nên của khối là #232326</p>
+                <span>Aenean nec eros</span> Vest ibulum ante<br>
+                Ảnh của dòng more info là info.gif
+            </div>
+            <div class="more">
+                <img src="image/exercise3.1/arr_1.gif" class="more-info">
+                <a href="#" class="more-info">more info</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

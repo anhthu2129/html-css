@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercise 2.2</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: black;
+        }
+        .container {
+            background-color: #272526;
+            width: 70%;
+            height: 800px;
+            margin: auto;
+        }
+        .news {
+            background-image: url(./image/exercise2.2/confidential-logo.gif);
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-color: white;
+            width: 70%;
+            position: relative;
+            display: flex;
+            padding-bottom: 30px;
+        }
+        .left {
+            width: 50%;
+            border-right: 1px dotted black;
+        }
+        .right {
+            width: 50%;
+        }
+        .left h3, .right h3 {
+            margin-block-end: 0;
+            margin-block-start: 0;
+            margin: 0;
+            color: white;
+            background-image: url(./image/exercise2.2/h2-confidential-heading-bg.gif);
+        }
+        .left h4 {
+            background-image: url(./image/exercise2.2/h3-confidential-showbuzz-bg.gif);
+            text-align: right;
+            padding-right: 20px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 25px;
+        }
+        .right h4 {
+            background-image: url(./image/exercise2.2/h3-confidential-shootingstars-bg.gif);
+            text-align: right;
+            padding-right: 20px;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            height: 25px;
+        }
+        .search {
+            min-width: 30%;
+        }
+        .news img {
+            padding-top: 10px;
+            margin: 10px;
+        }
+        .left a, .right a {
+            text-decoration: none;
+            color: black;
+        }
+        .search button {
+            background-color: purple;
+            color: white;
+            border: none;
+        }
+        .movie {
+            display: flex;
+            margin-top: 10px; 
+            width: 70% 
+        }
+        .trailer {
+            width: 50%;
+            background-color: white;
+            margin-right: 20px;
+            float: left;
+        }
+        .review {
+            width: 50%;
+            background-color: white;
+            float: right;
+        }
+        .trailer h3, .review h3 {
+            margin-block-end: 0;
+            margin-block-start: 0;
+            color: white;
+            background-image: url(./image/exercise2.2/h2-top-movie-trailers-bg.gif);
+        }
+        .trailer button {
+            background: #eee url(./image/exercise2.2/close.jpg) no-repeat center right;
+            width: 100%;
+            color: #0189bb;
+            text-align: left;
+            font-weight: bold;
+            border: unset;
+        }
+        .trailer button:first-child {
+            background: #eee url(./image/exercise2.2/open.jpg) no-repeat center right;
+        }
+        .top1 {
+            background-color: white;
+        }
+        .top1 img {
+            width: 25%;
+            float: left;
+        }
+        .info {
+            display: flex;
+        }
+        .info p {
+            margin-block-end: 0;
+            margin-block-start: 0;
+        }
+        .clip {
+            background: url(./image/exercise2.2/icon_1.png) no-repeat 2%;
+            color: #0189bb;
+            padding-left: 40px;
+            margin-bottom: 20px;
+        }
+        .showing {
+            background: url(./image/exercise2.2/now-showing-icon.gif) no-repeat left;
+            display: flex;
+            margin: 10px;
+        } 
+        .showing p {
+            margin-block-end: 0;
+            margin-block-start: 0;
+            font-weight: bold;
+            margin: 0 10px 0 25px;
+        }
+        select {
+            width: 150px;
+        }
+        .box2 {
+            border-top: 1px dotted black;
+        }
+        .box1 h4, .box2 h4 {
+            margin-block-end: 0;
+            margin-block-start: 0;
+            color: #0189bb;
+            background: url(./image/exercise2.2/start_1.png) no-repeat center right;
+        }
+        .local {
+            background: url(./image/exercise2.2/clock.png) no-repeat 2% 90%;
+            width: 90%;
+            background-size: 15px;
+        }
+        .more {
+            border-top: 1px dotted black;
+            margin-left: 25px;
+        }
+        .more a {
+            color: #0189bb;
+            font-weight: 700;
+            font-size: 13px;
+        }
+        .more span {
+            margin-left: 25px;
+            font-size: 13px;
+        }
+        .menu {
+            text-align: center;
+            border-top: 1px dotted #fff;
+            margin-top: 30px;
+            padding: 10px 0;
+            background-color: #272526;
+        }
+        .menu ul {
+            padding: 0;
+        }
+        .menu li {
+            display: inline-block;
+            padding: 0 30px;
+        }
+        .menu img {
+            display: block;
+            margin: auto;
+        }
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+        }
+        footer {
+            background-color: white;
+            width: 70%;
+            margin: 50px auto;
+            font-size: 10px;
+            text-align: center;
+        }
+        footer a {
+            text-decoration: none;
+            color: #0189bb;
+            font-weight: bold;
+        }
+        footer p {
+            margin-block-start: 0;
+            font-weight: bold;
+            color: #0189bb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="news">
+            <div class="left">
+                <h3>DAILY CELEBRITY GOSSIP</h3>
+                <img src="image/exercise2.2/news_1.png">
+                <h4>
+                    <a href="#">MORE</a>
+                </h4>
+                <a href="#">+ RUSSELL CROWE +MORE ...</a>
+                <p>RUSSEL Crowe's son to marry Keith & Nicole's daugher, plus Renee Zellweger reveals her breast cancer scare</p>
+            </div>
+
+            <div class="right">
+                <h3>DAILY CELEBRITY PICS</h3>
+                <img src="image/exercise2.2/news_2.png">
+                <h4>
+                    <a href="#">MORE</a>
+                </h4>
+                <a href="#">+ BECKHAMS, CLAUDIA SCHIFFER ...</a>
+                <p>VICTORIA and David Beckham dine out in NY, as top models Claudia Schiffer and Eva Herzigova hit the shops in Milan.</p>
+            </div>
+
+            <div class="search">
+                <img src="image/exercise2.2/Entertainment.gif">
+                <input type="text">
+                <button>SEARCH</button> 
+            </div>
+        </div>
+
+        <div class="movie">
+            <div class="trailer">
+                <h3>TOP 3 MOVIE TRAILERS</h3>
+                <div class="top1">
+                    <button>The house Bunny (M)</button>
+                    <div class="info">
+                        <img src="image/exercise2.2/0,,6254346,00.jpg">
+                        <div class="watch">
+                            <p>When Playboy bunny Shelly is tossed out of the mansion, she falls in with the sorority girls form Zeta Alpha Zeta.</p>
+                            <div class="clip">
+                                <span>Watch Now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>Eagle Eye</button>
+                <button>Journey To The Centre Of The Earth (PG)</button>
+
+                <div class="showing">
+                    <p>Now Showing</p>
+                    <select>
+                        <option value="1">Select Movie</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="review">
+                <h3>MOVIE REVIEWS</h3>
+                <div class="box1">
+                    <h4>Eagle Eye</h4>
+                    <div class="info">
+                        <img src="./image/exercise2.2/thumb_100x66_216371_216162_2008_eagle_eye_00.jpg">
+                        <p>SHIA LaBeouf hits the ground running in Eagle Eye, an against the clock thriller with a timely technological t...</p>
+                    </div>
+                    <div class="clip">
+                        <span>View Trailer</span>
+                    </div>
+                </div>
+                <div class="box2">
+                    <h4>House Bunny</h4>
+                    <div class="info">
+                        <img src="./image/exercise2.2/thumb_100x66_215784_215698_2008_the_house_bunny.jpg">
+                        <p>IF YOU left Legally Blonde and Revenge Of The Nerds DVD in a darkened room for long enough, something like The House Bun...</p>
+                    </div>
+                    <div class="clip">
+                        <span>View Trailer</span>
+                    </div>
+                </div>
+                <div class="local">
+                    <div class="more">
+                        <a>Local Cinema listings</a>
+                        <span>+ MORE MOVIES</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./image/exercise2.2/item_1.jpg">
+                        News on your mobile
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/exercise2.2/item_2.jpg">
+                        RSS feeds
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/exercise2.2/item_3.jpg">
+                        Newsletters                        
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/exercise2.2/item_4.jpg">
+                        Send your news stories
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="image/exercise2.2/item_5.jpg">
+                        Send your news photos
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="link">
+            <a href="#">Help |</a>
+            <a href="#">Contact us |</a>
+            <a href="#">Advertise with Us |</a>
+            <a href="#">Job Opportunities |</a>
+            <a href="#">Terrns & Conditions |</a>
+            <a href="#">Privacy Policy |</a>
+            <a href="#">Accessibillity |</a>
+            <a href="#">Sitenap |</a>
+            <a href="#">News Headlines from Our Partners</a>
+            <a href="#top" style="position: absolute; right: 290px;">Back to top</a>
+        </div>
+        <p>Copyright 2008 News Limited. All times AEST (GMT +10)</p>
+    </footer>
+</body>
+</html>
